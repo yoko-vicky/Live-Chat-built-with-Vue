@@ -1,7 +1,7 @@
-import { db } from './firebase/config';
+import { projectFirestore } from './firebase/config';
 
 export const getData = async (collectionName) => {
-  return db
+  return projectFirestore
     .collection(collectionName)
     .get()
     .then((querySnapshot) => {
@@ -10,9 +10,9 @@ export const getData = async (collectionName) => {
 };
 
 export const addData = async (collectionName, objToAdd) => {
-  return db.collection(collectionName).doc().set(objToAdd);
+  return projectFirestore.collection(collectionName).doc().set(objToAdd);
 };
 
 export const getSnapshot = async (collectionName) => {
-  return await db.collection(collectionName).get();
+  return await projectFirestore.collection(collectionName).get();
 };
