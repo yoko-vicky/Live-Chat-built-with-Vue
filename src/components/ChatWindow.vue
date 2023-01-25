@@ -25,7 +25,7 @@ export default {
       if (!documents.value) return;
       return documents.value.map((doc) => {
         // console.log('doc.createdAt', doc.createdAt);
-        console.log('doc.user', doc.user);
+        // console.log('doc.user', doc.user);
         let time = formatDistanceToNow(doc.createdAt.toDate());
         return { ...doc, createdAt: time };
       });
