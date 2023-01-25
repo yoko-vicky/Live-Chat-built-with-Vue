@@ -25,9 +25,11 @@ export default {
     const password = ref('');
     const handleSubmit = async () => {
       // console.log(displayName.value, email.value, password.value);
-      await signup(email.value, password.value, displayName.value).then((res) =>
-        console.log(res),
-      );
+      const res = await signup(email.value, password.value, displayName.value);
+      console.log(res);
+      if (!error.value) {
+        console.log('succeeded to signup');
+      }
     };
     return {
       displayName,
