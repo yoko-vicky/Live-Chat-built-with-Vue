@@ -2,7 +2,7 @@ import { projectAuth } from '@/firebase/config';
 import { ref } from 'vue';
 
 const error = ref(null);
-// eslint-disable-next-line no-unused-vars
+
 const signup = async (email, password, displayName) => {
   error.value = null;
 
