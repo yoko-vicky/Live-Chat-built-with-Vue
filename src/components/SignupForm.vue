@@ -17,7 +17,7 @@ import { ref } from 'vue';
 import useSignup from '@/composables/useSignup';
 
 export default {
-  setup() {
+  setup(props, context) {
     // eslint-disable-next-line no-unused-vars
     const { error, signup } = useSignup();
     const displayName = ref('');
@@ -27,8 +27,10 @@ export default {
       // console.log(displayName.value, email.value, password.value);
       const res = await signup(email.value, password.value, displayName.value);
       console.log(res);
+
       if (!error.value) {
         console.log('succeeded to signup');
+        context.emit('signup');
       }
     };
     return {
