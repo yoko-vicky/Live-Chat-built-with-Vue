@@ -1,9 +1,18 @@
 <template>
-  <div class="container welcome"><p>welcome</p></div>
+  <div class="container welcome">
+    <h1>Welcome</h1>
+    <SignupForm /> <LoginForm />
+  </div>
 </template>
 
 <script>
-export default {};
+import SignupForm from '../components/SignupForm.vue';
+import LoginForm from '../components/LoginForm.vue';
+
+export default {
+  components: { SignupForm, LoginForm },
+  setup() {},
+};
 </script>
 
 <style>
