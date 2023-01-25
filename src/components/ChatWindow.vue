@@ -4,7 +4,7 @@
     <div v-if="documents" class="messages">
       <div v-for="doc in formattedDocuments" :key="doc.id" class="single">
         <span class="created-at">{{ doc.createdAt }}</span>
-        <span class="name">{{ doc.name }}</span>
+        <span class="name">{{ doc.user }}</span>
         <span class="message">{{ doc.message }}</span>
       </div>
     </div>
@@ -22,6 +22,7 @@ export default {
     const formattedDocuments = computed(() => {
       return documents.value.map((doc) => {
         // console.log('doc.createdAt', doc.createdAt);
+        console.log('doc.user', doc.user);
         let time = formatDistanceToNow(doc.createdAt.toDate());
         return { ...doc, createdAt: time };
       });
@@ -40,6 +41,7 @@ export default {
 .chat-window {
   background: #fafafa;
   padding: 30px 20px;
+  text-align: left;
 }
 .single {
   margin: 18px 0;
