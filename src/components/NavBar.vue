@@ -1,6 +1,6 @@
 <template>
   <nav v-if="user">
-    <div>
+    <div class="left">
       <p>Hey there {{ user.displayName }}</p>
       <p class="email">Currently logged in as {{ user.email }}</p>
     </div>
@@ -36,6 +36,9 @@ export default {
 </script>
 
 <style>
+.left {
+  text-align: left;
+}
 nav {
   padding: 20px;
   border-bottom: 1px solid #eee;
