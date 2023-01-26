@@ -35,6 +35,6 @@ export default {
 
 <style>
 .container.chatroom-container {
-  margin: 40px auto 80px;
+  margin: 16px auto;
 }
 </style>

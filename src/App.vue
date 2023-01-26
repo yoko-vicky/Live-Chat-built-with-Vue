@@ -38,14 +38,10 @@ nav a.router-link-exact-active {
 }
 
 .main-title {
-  margin: 10px auto 20px;
+  margin: 0 auto;
 }
 
 .title-container {
   margin: 40px auto 0;
-}
-
-.icon {
-  margin-right: 16px;
 }
 </style>
