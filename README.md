@@ -1,6 +1,9 @@
-# Live Chat Built With Vue
+# Live Chatroom Built With Vue
+Developed a live chat app with VueJS, Firebase Firestore, and Firebase Auth. 
+After registering your name, email, and password, you can chat live with other users. 
+Your authentication is handled by Firebase Auth securely.
 
-<!-- ![Top Page Screenshot](./screenshot.gif) -->
+![Top Page Screenshot](./livechat.gif)
 
 ## Table of Contents
 
@@ -15,9 +18,9 @@
 
 ## Built With
 
-- Vue.js
-- JavaScript
-- Firebase/Firestore
+- Vue.js (Vue3)
+- Firebase Firestore
+- Firebase Authentication 
 
 ## Live Demo
 
@@ -35,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
 6. Type git clone, and then paste the URL you copied in Step 3. <br>
    e.g. $ git clone https://github.com/yourUsername/yourProjectName
 7. Press Enter. Your local copy will be created.
-8. To run the test, run `npm test`
+8. To run the app, run `npm run serve` or `yarn serve`
 
 ## How to run the app
 
@@ -72,6 +75,7 @@ Give a ⭐️ if you like this project!
 ## License
 
 This project is [MIT](./LICENSE) licensed.
+The original design and architecture of the app are provided by [Shaun Pelling](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg).
 
 <!-- ## Acknowledgements
 
