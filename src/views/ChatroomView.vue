@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container chatroom-container">
     <NavBar />
     <ChatWindow />
     <NewChatForm />
@@ -33,4 +33,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.container.chatroom-container {
+  margin: 40px auto 80px;
+}
+</style>

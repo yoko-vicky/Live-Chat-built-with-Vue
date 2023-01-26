@@ -19,6 +19,7 @@
     "dotenv": "^16.0.3",
     "firebase": "^9.16.0",
     "vue": "^3.2.13",
+    "vue-material-design-icons": "^5.1.2",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {

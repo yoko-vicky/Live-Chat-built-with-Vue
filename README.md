@@ -17,10 +17,11 @@
 
 - Vue.js
 - JavaScript
+- Firebase/Firestore
 
 ## Live Demo
 
-<!-- [Live Demo Link](https://yocosaka.com/Platform-game/dist/) -->
+[Live Demo Link](https://live-chat-yocosaka.netlify.app/)
 
 ## Getting Started
 
