@@ -1,6 +1,7 @@
 # Live Chatroom Built With Vue
-Developed a live chat app with VueJS, Firebase Firestore, and Firebase Auth. 
-After registering your name, email, and password, you can chat live with other users. 
+
+Developed a live chat app with VueJS, Firebase Firestore, and Firebase Auth.
+After registering your name, email, and password, you can chat live with other users.
 Your authentication is handled by Firebase Auth securely.
 
 ![Top Page Screenshot](./livechat.gif)
@@ -20,7 +21,7 @@ Your authentication is handled by Firebase Auth securely.
 
 - Vue.js (Vue3)
 - Firebase Firestore
-- Firebase Authentication 
+- Firebase Authentication
 
 ## Live Demo
 
@@ -38,17 +39,27 @@ To get a local copy up and running follow these simple example steps.
 6. Type git clone, and then paste the URL you copied in Step 3. <br>
    e.g. $ git clone https://github.com/yourUsername/yourProjectName
 7. Press Enter. Your local copy will be created.
-8. To run the app, run `npm run serve` or `yarn serve`
+<!-- 8. To run the app, run `npm run serve` or `yarn serve` -->
 
 ## How to run the app
 
-<!--
-1. After cloning or downloading this repository, in the terminal, move to this folder
-   eg: `cd Desktop/platform-game`
-2. Run `npm install` or `yarn install`
-3. After installing packages in step2, run `npm run build`
-4. Run `npm run dev`, then the local server will be automatically opened
-5. Choose dist folder, and start the game -->
+1. After cloning or downloading this repository, Run `npm install` or `yarn install`
+2. create a new file with the name `.env` in the project root
+3. Add Firebase Authentiication Information to `.env` file like below:
+
+```
+VUE_APP_FIREBASE_API_KEY<-- Input Firebase API key here -->
+VUE_APP_FIREBASE_AUTH_DOMAIN=<-- Input Firebase auth domain here -->
+VUE_APP_FIREBASE_PROJECT_ID=<-- Input Firebase project ID here -->
+VUE_APP_FIREBASE_STORAGE_BUCKET=<-- Input Firebase storage bucket here -->
+VUE_APP_FIREBASE_MESSAGING_SENDER_ID=<-- Input Firebase messaging sender ID here -->
+VUE_APP_FIREBASE_APP_ID=<-- Input Firebase API ID here -->
+VUE_APP_FIREBASE_MEASUREMENT_ID=<-- Input Firebase measurement ID here -->
+
+```
+
+4. Run `yarn serve`, then the local server will be automatically opened
+5. Run `yarn build`to generate the production file in `dist` folder
 
 ## Author
 
@@ -56,17 +67,6 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@yocosaka](https://github.com/yocosaka)
 - LinkedIn: [Yoko Saka](https://www.linkedin.com/in/yokosaka)
-
-<!-- ## Contributing
-
-Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](../../issues).
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request -->
 
 ## Show your support
 
@@ -76,35 +76,3 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./LICENSE) licensed.
 The original design and architecture of the app are provided by [Shaun Pelling](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg).
-
-<!-- ## Acknowledgements
-
-- [Phaser3](https://phaser.io/phaser3) -->
-
-<!-- ## Project setup
-
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/). -->
