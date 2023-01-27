@@ -44,7 +44,7 @@ To get a local copy up and running follow these simple example steps.
 ## How to run the app
 
 1. After cloning or downloading this repository, Run `npm install` or `yarn install`
-2. create a new file with the name `.env` in the project root
+2. Create a new file with the name `.env` in the project root
 3. Add Firebase Authentiication Information to `.env` file like below:
 
 ```
